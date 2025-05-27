@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.app.entity.Client;
 import com.app.service.ClientService;
 
-@CrossOrigin(origins = "http://localhost:4200") // Allow Angular frontend
+@CrossOrigin("*") // Allow Angular frontend
 @RestController
 @RequestMapping("/api/clients")
 public class ClientController {
